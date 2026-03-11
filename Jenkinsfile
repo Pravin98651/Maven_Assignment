@@ -4,12 +4,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/username/maven-assignment.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 bat 'mvn clean compile'
